@@ -1,13 +1,12 @@
-//Es buena practica separar la estructura de datos del codigo del componente.
 export class Article{
   title: string;
   link: string;
   votes: number;
 
   constructor(title: string, link: string, votes?: number){
-    this.title;
-    this.link;
-    this.votes == votes || 0;
+    this.title = title; //agregar la equivalencia!!!!
+    this.link = link; //agregar la equivalencia!!!!
+    this.votes = votes || 0; //agregar la equivalencia!!!!
   }
 
   voteUp(): void{
@@ -28,3 +27,4 @@ export class Article{
     }
   }
 }
+//Es buena practica separar la estructura de datos del codigo del componente.

@@ -17,6 +17,8 @@
     class="ui positive right floated button">Subir link</button>
 
 </form>
+
 <div class="ui grid posts">
-  <app-article></app-article>
+  <app-article *ngFor="let article of articles" [article]='article'>
+  </app-article>
 </div>
