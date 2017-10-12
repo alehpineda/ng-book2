@@ -4,12 +4,16 @@
 
   <div class="field">
     <label for="title">Titulo</label>
-    <input name="title">
+    <input name="title" #newtitle> <!-- Agregado -->
   </div>
-  
+
   <div class="field">
     <label for="link">Link</label>
-    <input name="link">
+    <input name="link" #newlink> <!-- Agregado -->
   </div>
+
+ <!-- Se agrego boton -->
+  <button (click)="addArticle(newtitle, newlink)"
+    class="ui positive right floated button">Subir link</button>
 
 </form>
